@@ -11,7 +11,7 @@ def encrypt(input)
       encryptedValue += " "
       key += "0"
     else
-      num = rand(1...5)
+      num = rand(0...5)
       encryptedValue += (input[i].ord + num).chr
       key += String(num)
     end
